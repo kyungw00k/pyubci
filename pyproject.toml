@@ -1,0 +1,26 @@
+[project]
+name = "pyubci"
+version = "0.1.0"
+authors = [
+  { name="Kyungwook Park", email="parksama@gmail.com" },
+]
+description = "UBCI(Upbit Crypto Index) Query Module"
+readme = { file = "README.md", content-type = "text/markdown" }
+license = {file = "LICENSE"}
+requires-python = ">=3.8"
+dependencies = [
+    "requests>=2.25.1"
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Office/Business :: Financial :: Investment"
+]
+keywords = ["upbit", "업비트", "cryptocurrency", "index", "trading"]
+urls = { "Homepage" = "https://github.com/kyungw00k/pyubci" }
+
+[project.scripts]
+ubci = "pyubci.cli:main"
